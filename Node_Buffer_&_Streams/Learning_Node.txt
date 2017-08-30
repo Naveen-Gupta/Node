@@ -1,0 +1,27 @@
+/********************************  Learning Node ***********************************/
+
+
+
+Buffer And Streams:
+    @
+   @@@
+  @@@@@     --- @ -- @ -- @ ---->     @
+ @@@@@@@                             @@@    -- @ -- @ -- @ -->       @
+@@@@@@@@@                           @@@@@      data passed on        @@
+..DATA..                          ..BUFFER..    or processed      ..DATA..
+
+                                        @
+          ----@ ---@ ---@ ---@ ---@--- @@@ ---@ ---@ ---@ ---@ ---@ --->
+          S          Streaming       ..Buffer..     Streaming          D
+
+Buffer: A temporary storage for chunk of data that is being transfered from one place to another.
+>> whenever Buffer is filled then data is passed on.
+
+Stream: Stream is just a process of flow of data from the data source to the buffer and from the buffer to the client
+
+Readable Stream: allows nodejs to read data from Stream
+Writable Stream: allows nodejs to write data to Stream
+Duplex: allows nodejs to do both operations
+
+
+Pipe: to read data from buffer and write.
